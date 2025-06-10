@@ -1,13 +1,6 @@
-import { useState } from 'react';
 
-function NoSelector() {
-  const [clickedIndex, setClickedIndex] = useState(null);
-  const arr = [1, 2, 3, 4, 5]; // Example array
-
-  const handleClick = (index) => {
-    setClickedIndex(index === clickedIndex ? null : index);
-  };
-
+function NoSelector({handleClick,clickedIndex}) {
+  const arr = [1, 2, 3, 4, 5,6];
   return (
     <div className="flex gap-3">
       {arr.map((e, i) => (

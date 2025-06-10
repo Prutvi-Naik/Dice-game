@@ -4,7 +4,6 @@ function Start() {
     const [isStart,setIsStart] = useState(true)
     const startGame = () =>{
         setIsStart(!isStart)
-        console.log(isStart)
     }
     
  if(isStart == false)
