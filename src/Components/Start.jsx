@@ -1,7 +1,7 @@
 import { useState } from "react";
 import Play from "./Play"
 function Start() {
-    const [isStart,setIsStart] = useState(true)
+    const [isStart,setIsStart] = useState(false)
     const startGame = () =>{
         setIsStart(!isStart)
     }
